@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "kaleidoscope_sculk:ancient_bone_fragment"
+    },
+    "F": {
+      "item": "kaleidoscope_sculk:sculk_fungus"
+    },
+    "T": {
+      "item": "kaleidoscope_sculk:warden_tendril"
+    }
+  },
+  "pattern": [
+    "BBF",
+    " TB",
+    "T  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "kaleidoscope_sculk:sculk_bone_sickle"
+  }
+}

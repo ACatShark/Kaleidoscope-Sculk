@@ -1,0 +1,35 @@
+﻿{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "youkaishomecoming"
+    }
+  ],
+  "type": "kaleidoscope_cookery:pot",
+  "carrier": {
+    "tag": "c:foods/cooked_rice"
+  },
+  "ingredients": [
+    {
+      "item": "youkaishomecoming:tofu"
+    },
+    {
+      "tag": "c:flour"
+    },
+    {
+      "tag": "c:flour"
+    },
+    {
+      "tag": "c:vegetables/pepper"
+    },
+    {
+      "tag": "c:vegetables/pepper"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "kaleidoscope_nether:mapo_tofu_rice"
+  },
+  "stir_fry_count": 4,
+  "time": 300
+}

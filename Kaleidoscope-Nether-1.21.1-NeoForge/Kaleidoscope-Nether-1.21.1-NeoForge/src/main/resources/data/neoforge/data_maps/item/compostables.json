@@ -1,0 +1,28 @@
+{
+  "values": {
+    "kaleidoscope_nether:crimson_fruit": {
+      "can_villager_compost": true,
+      "chance": 0.65
+    },
+    "kaleidoscope_nether:warped_fruit": {
+      "can_villager_compost": true,
+      "chance": 0.65
+    },
+    "kaleidoscope_nether:poisonous_fruit": {
+      "can_villager_compost": true,
+      "chance": 0.65
+    },
+    "kaleidoscope_nether:soul_pepper": {
+      "can_villager_compost": true,
+      "chance": 0.65
+    },
+    "kaleidoscope_nether:warped_cake": {
+      "can_villager_compost": true,
+      "chance": 1.0
+    },
+    "kaleidoscope_nether:nether_caterpillar": {
+      "can_villager_compost": true,
+      "chance": 1.0
+    }
+  }
+}

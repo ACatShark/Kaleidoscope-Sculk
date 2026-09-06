@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    }
+  ],
+  "type": "kaleidoscope_cookery:pot",
+  "carrier": {
+    "item": "minecraft:bowl"
+  },
+  "ingredients": [
+    {
+      "item": "cataclysm:ignitium_ingot"
+    },
+    {
+      "tag": "c:vegetables/pepper"
+    },
+    {
+      "tag": "c:vegetables/pepper"
+    },
+    {
+      "tag": "c:vegetables/tomato"
+    },
+    {
+      "tag": "c:vegetables/tomato"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "kaleidoscope_nether:magma_sweet_and_sour_pork"
+  },
+  "stir_fry_count": 3,
+  "time": 300
+}

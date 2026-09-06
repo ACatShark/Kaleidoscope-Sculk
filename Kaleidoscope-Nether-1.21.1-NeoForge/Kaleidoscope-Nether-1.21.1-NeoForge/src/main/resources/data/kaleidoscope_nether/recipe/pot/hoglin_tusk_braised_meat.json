@@ -1,0 +1,44 @@
+{
+  "type": "kaleidoscope_cookery:pot",
+  "carrier": {
+    "item": "kaleidoscope_nether:hoglin_tusk"
+  },
+  "ingredients": [
+    [
+      {
+        "tag": "c:raw_ham"
+      },
+      {
+        "item": "kaleidoscope_nether:ham_slice"
+      }
+    ],
+    [
+      {
+        "tag": "c:raw_ham"
+      },
+      {
+        "item": "kaleidoscope_nether:ham_slice"
+      }
+    ],
+    [
+      {
+        "tag": "c:raw_ham"
+      },
+      {
+        "item": "kaleidoscope_nether:ham_slice"
+      }
+    ],
+    {
+      "tag": "c:vegetables/lettuce"
+    },
+    {
+      "tag": "c:vegetables/lettuce"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "kaleidoscope_nether:hoglin_tusk_braised_meat"
+  },
+  "stir_fry_count": 6,
+  "time": 650
+}

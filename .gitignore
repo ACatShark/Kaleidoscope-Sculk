@@ -1,0 +1,31 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+bin/
+out/
+
+# 反编译使用的临时工具与产物
+.buildtools/
+.classes/
+
+# 反编译出来的原始 class 与 jar（源码已还原到 src/main/java）
+/org/
+/*.jar
+
+# 运行时
+run/
+runs/
+logs/
+*.log

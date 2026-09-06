@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": "kaleidoscope_nether:poisonous_fruit",
+  "step": "underground_decoration"
+}
