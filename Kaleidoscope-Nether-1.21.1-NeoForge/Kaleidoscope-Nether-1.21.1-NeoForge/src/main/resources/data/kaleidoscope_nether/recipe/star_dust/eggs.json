@@ -1,9 +1,0 @@
-{
-  "type": "kaleidoscope_nether:star_dust",
-  "ingredient": {
-    "tag": "c:eggs"
-  },
-  "result": {
-    "id": "minecraft:sniffer_egg"
-  }
-}

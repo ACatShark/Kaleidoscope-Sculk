@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "kaleidoscope_nether:item/seed_bag_has_items"
-  }
-}

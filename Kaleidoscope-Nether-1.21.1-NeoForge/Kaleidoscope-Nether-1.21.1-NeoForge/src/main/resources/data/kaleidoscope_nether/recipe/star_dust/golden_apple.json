@@ -1,9 +1,0 @@
-{
-  "type": "kaleidoscope_nether:star_dust",
-  "ingredient": {
-    "item": "minecraft:golden_apple"
-  },
-  "result": {
-    "id": "minecraft:enchanted_golden_apple"
-  }
-}

@@ -1,9 +1,0 @@
-{
-  "type": "kaleidoscope_nether:star_dust",
-  "ingredient": {
-    "tag": "minecraft:trim_templates"
-  },
-  "result": {
-    "id": "minecraft:netherite_upgrade_smithing_template"
-  }
-}

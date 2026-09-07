@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "kaleidoscope_nether:item/magma_sweet_and_sour_pork"
-  }
-}
