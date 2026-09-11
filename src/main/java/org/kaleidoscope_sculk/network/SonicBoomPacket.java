@@ -22,9 +22,7 @@ import org.kaleidoscope_sculk.register.ModItems;
 
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public record SonicBoomPacket() implements CustomPacketPayload {
 
@@ -89,12 +87,11 @@ public record SonicBoomPacket() implements CustomPacketPayload {
         double radius = 0.5; 
 
         
+        // rayTraceEntities 内部已按距离升序排列，命中距离单调递增，
+        // 粒子 stepKey 因此也是全局单调的，用一个游标即可代替 HashSet 去重。
         List<EntityHit> hits = rayTraceEntities(player, startPos, lookVec, range, radius);
 
-        Set<Integer> particlePositions = new HashSet<>();
-
-        
-        hits.sort(Comparator.comparingDouble(h -> h.distance));
+        int lastParticleStep = -1;
 
         for (int i = 0; i < hits.size(); i++) {
             EntityHit hit = hits.get(i);
@@ -110,13 +107,12 @@ public record SonicBoomPacket() implements CustomPacketPayload {
 
             for (int j = 1; j < steps; ++j) {
                 int stepKey = (int) (j / 2.0); 
-                if (!particlePositions.contains(stepKey)) {
-                    Vec3 particlePos = startPos.add(direction.scale(j));
-                    level.sendParticles(ParticleTypes.SONIC_BOOM,
-                            particlePos.x, particlePos.y, particlePos.z,
-                            1, 0.0, 0.0, 0.0, 0.0);
-                    particlePositions.add(stepKey);
-                }
+                if (stepKey <= lastParticleStep) continue;
+                Vec3 particlePos = startPos.add(direction.scale(j));
+                level.sendParticles(ParticleTypes.SONIC_BOOM,
+                        particlePos.x, particlePos.y, particlePos.z,
+                        1, 0.0, 0.0, 0.0, 0.0);
+                lastParticleStep = stepKey;
             }
 
             

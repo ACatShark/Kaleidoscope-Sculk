@@ -94,11 +94,11 @@ public class SculkBoneSickleItem extends SickleItem {
 
     private boolean harvest(BlockPos pos, int x, int y, int z, Level level, Player player, ItemStack stack) {
         BlockPos newPos = pos.offset(x, y, z);
-        if (!level.mayInteract(player, newPos)) {
-            return false;
-        }
         BlockState blockState = level.getBlockState(newPos);
         if (blockState.isAir()) {
+            return false;
+        }
+        if (!level.mayInteract(player, newPos)) {
             return false;
         }
         if (blockState.is(TagMod.SICKLE_HARVEST_BLACKLIST)) {
